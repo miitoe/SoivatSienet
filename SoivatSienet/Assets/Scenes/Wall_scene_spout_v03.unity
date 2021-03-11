@@ -4875,7 +4875,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2c2a67c85a2dea74283548ec8239ec0b, type: 2}
+  - {fileID: 2100000, guid: 63139d0a5fcb89a44bff307d6bf5886c, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5127,7 +5127,7 @@ GameObject:
   - component: {fileID: 231894452}
   - component: {fileID: 231894451}
   m_Layer: 0
-  m_Name: DOT01_controller
+  m_Name: Butterfly01_controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
