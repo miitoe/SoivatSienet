@@ -1,21 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AnimControlPresskeyI
-    - AnimControlPresskeyO
-    - AnimControlPresskeyP
-    - AudioPlayPresskeyI
-    - AudioPlayPresskeyO
-    - AudioPlayPresskeyP
+    - AnimControlPresskeyB
+    - AnimControlPresskeyM
+    - AnimControlPresskeyN
+    - AudioPlayPresskeyB
+    - AudioPlayPresskeyM
+    - AudioPlayPresskeyN
     - OSC
-    - OSC_distribution_Blue
-    - ParticleKeypressI
-    - ParticleKeypressO
-    - ParticleKeypressP
-    - Pixelplacement.Spline
+    - OSC_distribution_Red
+    - ParticleKeypressB
+    - ParticleKeypressM
+    - ParticleKeypressN
     - Pixelplacement.SplineAnchor
     - Pixelplacement.SplineTangent
-    - SplineControlledParticleSystem
     Klak.Spout.dll:
     - Klak.Spout.SpoutSender
     Unity.RenderPipelines.Core.Runtime.dll:
@@ -71,7 +69,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/MushroomBLUE_scene_spout_v04.unity:
+    Assets/Scenes/MushroomRED_scene_spout_v04.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -111,113 +109,109 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11174}
-    - Class: 114
-      Script: {instanceID: 11176}
-    - Class: 114
-      Script: {instanceID: 11178}
-    - Class: 114
-      Script: {instanceID: 11180}
-    - Class: 114
-      Script: {instanceID: 11182}
-    - Class: 114
       Script: {instanceID: 11184}
     - Class: 114
       Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11280}
+      Script: {instanceID: 11188}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 11740}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11496}
     - Class: 114
-      Script: {instanceID: 11934}
+      Script: {instanceID: 11522}
     - Class: 114
-      Script: {instanceID: 12102}
+      Script: {instanceID: 11704}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 11750}
     - Class: 114
-      Script: {instanceID: 12330}
+      Script: {instanceID: 11826}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 12388}
+      Script: {instanceID: 11944}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 12112}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12888}
+      Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12758}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 12898}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13186}
+      Script: {instanceID: 12984}
     - Class: 114
-      Script: {instanceID: 13224}
+      Script: {instanceID: 13004}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13110}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 13220}
     - Class: 114
-      Script: {instanceID: 13458}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 13438}
     - Class: 114
-      Script: {instanceID: 13796}
+      Script: {instanceID: 13444}
     - Class: 114
-      Script: {instanceID: 13868}
+      Script: {instanceID: 13468}
     - Class: 114
-      Script: {instanceID: 13888}
+      Script: {instanceID: 13588}
     - Class: 114
-      Script: {instanceID: 14018}
+      Script: {instanceID: 13678}
     - Class: 114
-      Script: {instanceID: 14048}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14054}
+      Script: {instanceID: 13878}
     - Class: 114
-      Script: {instanceID: 14306}
+      Script: {instanceID: 13898}
     - Class: 114
-      Script: {instanceID: 14392}
+      Script: {instanceID: 14028}
     - Class: 114
-      Script: {instanceID: 14454}
+      Script: {instanceID: 14058}
     - Class: 114
-      Script: {instanceID: 14758}
+      Script: {instanceID: 14064}
     - Class: 114
-      Script: {instanceID: 14860}
+      Script: {instanceID: 14402}
     - Class: 114
-      Script: {instanceID: 14940}
+      Script: {instanceID: 14464}
     - Class: 114
-      Script: {instanceID: 15002}
+      Script: {instanceID: 14536}
     - Class: 114
-      Script: {instanceID: 15004}
+      Script: {instanceID: 14768}
     - Class: 114
-      Script: {instanceID: 15242}
+      Script: {instanceID: 14868}
     - Class: 114
-      Script: {instanceID: 15244}
+      Script: {instanceID: 14950}
     - Class: 114
-      Script: {instanceID: 15304}
+      Script: {instanceID: 15012}
     - Class: 114
-      Script: {instanceID: 15332}
+      Script: {instanceID: 15014}
     - Class: 114
-      Script: {instanceID: 15390}
+      Script: {instanceID: 15252}
     - Class: 114
-      Script: {instanceID: 15446}
+      Script: {instanceID: 15254}
     - Class: 114
-      Script: {instanceID: 15452}
+      Script: {instanceID: 15314}
+    - Class: 114
+      Script: {instanceID: 15342}
+    - Class: 114
+      Script: {instanceID: 15456}
+    - Class: 114
+      Script: {instanceID: 15462}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1349,5 +1343,5 @@ ScriptsOnlyBuild:
     className: VFXUISliderBinder
   platform: 19
   scenePathNames:
-  - Assets/Scenes/MushroomBLUE_scene_spout_v04.unity
-  playerPath: C:/Users/sienipatarumpu/Desktop/Metsasieniorkesteri/Unity/SIENET-PROJEKTOREILLE/BLUE/SIENIPATARUMPU.exe
+  - Assets/Scenes/MushroomRED_scene_spout_v04.unity
+  playerPath: C:/Users/sienipatarumpu/Documents/GitHub/BUILDS/110321/SIENIPATARUMPU.exe
