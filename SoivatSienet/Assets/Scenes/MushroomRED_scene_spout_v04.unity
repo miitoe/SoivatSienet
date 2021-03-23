@@ -6440,7 +6440,10 @@ MonoBehaviour:
   DOT_particle2_2: {fileID: 2696425302736139497}
   DOT_particle3: {fileID: 1160798585887787889}
   DOT_particle3_2: {fileID: 1160798585035275755}
-  sensitivity: 150
+  DOT_animation1: {fileID: 5947458822104319718}
+  DOT_animation2: {fileID: 7345349055544595903}
+  DOT_animation3: {fileID: 1160798584906124246}
+  sensitivity: 35
 --- !u!4 &1195155481
 Transform:
   m_ObjectHideFlags: 0
@@ -8152,7 +8155,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -13014,7 +13017,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -17899,7 +17902,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -22712,7 +22715,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -27525,7 +27528,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -32674,7 +32677,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2

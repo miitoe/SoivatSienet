@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -8,10 +9,23 @@ public class OSC_distribution_Blue : MonoBehaviour {
     public ParticleSystem DOT_particle1;
     public ParticleSystem DOT_particle2;
     public ParticleSystem DOT_particle3;
+    public ParticleSystem DOT_smallParticle1;
+    public ParticleSystem DOT_smallParticle2;
+    public ParticleSystem DOT_smallParticle3;
     public float sensitivity = 50;
     private float blue1Int;
-    private bool playBlue2 = false;
-    private bool playBlue3 = false;
+    private float blue2Int;
+    private float blue3Int;
+    public GameObject DOT_animation1;
+    public GameObject DOT_animation2;
+    public GameObject DOT_animation3;
+    public ParticleSystem DOT_splineAnimation1;
+    public ParticleSystem DOT_splineAnimation2;
+    public ParticleSystem DOT_splineAnimation3;
+
+    public float BLUE1VALUE = 0;
+    public float BLUE2VALUE = 0;
+    public float BLUE3VALUE = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -21,59 +35,51 @@ public class OSC_distribution_Blue : MonoBehaviour {
     }
 
     // Update is called once per frame
-	void Update () {
-        /*if(blue1Int >= sensitivity) {
-            DOT_particle1.Play();
-            Debug.Log("PLAY 1: " + blue1Int );
+	void Update () {        
+        if(blue1Int <= sensitivity) {
+            DOT_splineAnimation1.Stop();
+            DOT_animation1.GetComponent<Animator>().Play("BDOT04_idle");
+            DOT_particle1.Stop();
+            DOT_smallParticle1.Stop();
         }
-        else if(blue2Int >= sensitivity) {
-            DOT_particle2.Play();
-            Debug.Log("PLAY 2");
+        
+        if(blue2Int <= sensitivity) {
+            DOT_animation2.GetComponent<Animator>().Play("BDOT05_idle");
+            DOT_splineAnimation2.Stop();
+            DOT_particle2.Stop();
+            DOT_smallParticle2.Stop();
         }
-        else if(blue2Int >= sensitivity) {
-            DOT_particle3.Play();
-            Debug.Log("PLAY 3");
-        }*/
+
+        if(blue3Int <= sensitivity) {
+            DOT_animation3.GetComponent<Animator>().Play("BDOT06_idle");
+            DOT_splineAnimation3.Stop();
+            DOT_particle3.Stop();
+            DOT_smallParticle3.Stop();
+        }
 	}
 
     void blue1(OscMessage message){
-        if(message.GetFloat(0) > sensitivity) {
-            DOT_particle1.Play();
-            blue1Int = message.GetFloat(0);
-            Debug.Log(blue1Int);
-        }
+        blue1Int = message.GetFloat(0);
+        DOT_splineAnimation1.Play();
+        DOT_animation1.GetComponent<Animator>().Play("BDOT04_press");
+        DOT_particle1.Play();
+        DOT_smallParticle1.Play();
+        
 	}
 
     void blue2(OscMessage message){
-        if(message.GetFloat(0) > sensitivity) {
-            DOT_particle2.Play();
-            playBlue2 = true;
-        }
+        blue2Int = message.GetFloat(0);
+        DOT_animation2.GetComponent<Animator>().Play("BDOT05_press");
+        DOT_splineAnimation2.Play();
+        DOT_particle2.Play();
+        DOT_smallParticle2.Play();
 	}
 
     void blue3(OscMessage message){
-        if(message.GetFloat(0) > sensitivity) {
-            DOT_particle3.Play();
-            playBlue3 = true;
-        }
+        blue3Int = message.GetFloat(0);
+        DOT_animation3.GetComponent<Animator>().Play("BDOT06_press");
+        DOT_splineAnimation3.Play();
+        DOT_particle3.Play();
+        DOT_smallParticle3.Play();
 	}
-
-    /* void blue1(OscMessage message){
-        if(message.GetFloat(0) > sensitivity) {
-            DOT_particle1.Play();
-        }
-	}
-
-    void blue2(OscMessage message){
-        if(message.GetFloat(0) > sensitivity) {
-            DOT_particle2.Play();
-        }
-	}
-
-    void blue3(OscMessage message){
-        if(message.GetFloat(0) > sensitivity) {
-            DOT_particle3.Play();
-        }
-	} */
-
 }

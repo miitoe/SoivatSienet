@@ -1249,7 +1249,6 @@ GameObject:
   m_Component:
   - component: {fileID: 256866864}
   - component: {fileID: 256866863}
-  - component: {fileID: 256866865}
   m_Layer: 0
   m_Name: DOTS
   m_TagString: Untagged
@@ -1273,7 +1272,19 @@ MonoBehaviour:
   DOT_particle1: {fileID: 5947458823167307734}
   DOT_particle2: {fileID: 7345349055054711561}
   DOT_particle3: {fileID: 1160798584586125130}
+  DOT_smallParticle1: {fileID: 2140432488}
+  DOT_smallParticle2: {fileID: 1723586827}
+  DOT_smallParticle3: {fileID: 770812615}
   sensitivity: 50
+  DOT_animation1: {fileID: 531312415}
+  DOT_animation2: {fileID: 1160671149}
+  DOT_animation3: {fileID: 1025679456}
+  DOT_splineAnimation1: {fileID: 2118414425}
+  DOT_splineAnimation2: {fileID: 1687384518}
+  DOT_splineAnimation3: {fileID: 354653385}
+  BLUE1VALUE: 0
+  BLUE2VALUE: 0
+  BLUE3VALUE: 0
 --- !u!4 &256866864
 Transform:
   m_ObjectHideFlags: 0
@@ -1291,23 +1302,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &256866865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256866862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c29aefb3234a6e4199943524afdb35c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  osc: {fileID: 929435753}
-  DOT_particle1: {fileID: 2118414425}
-  DOT_particle2: {fileID: 1687384518}
-  DOT_particle3: {fileID: 354653385}
-  sensitivity: 50
 --- !u!1 &294923336
 GameObject:
   m_ObjectHideFlags: 0
@@ -12961,7 +12955,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -30118,7 +30112,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -40295,7 +40289,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -44116,7 +44110,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160798584498445246}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86666c17ffcadd94782d791abb3140c4, type: 3}
   m_Name: 
@@ -44129,7 +44123,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160798584498445246}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86e98cbff63319442a17b33578ae3ff3, type: 3}
   m_Name: 
@@ -44142,7 +44136,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160798584498445246}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8044298a08552b4ea8463affa4d3411, type: 3}
   m_Name: 
@@ -44155,7 +44149,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160798584498445246}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86666c17ffcadd94782d791abb3140c4, type: 3}
   m_Name: 
@@ -45183,7 +45177,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -50388,7 +50382,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -54605,7 +54599,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345349054789383013}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e8c67f93331b0f42a932705c883ebda, type: 3}
   m_Name: 
@@ -54618,7 +54612,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345349054789383013}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e705e242d4bd2547aff7ac650f30ed1, type: 3}
   m_Name: 
@@ -54631,7 +54625,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345349054789383013}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5197ce3512c1c6f489bc66d3f845f1a0, type: 3}
   m_Name: 
@@ -54644,7 +54638,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345349054789383013}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5197ce3512c1c6f489bc66d3f845f1a0, type: 3}
   m_Name: 
@@ -55633,7 +55627,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2

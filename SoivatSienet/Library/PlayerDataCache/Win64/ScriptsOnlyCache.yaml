@@ -1,14 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AnimControlPresskeyG
-    - AnimControlPresskeyH
     - AnimControlPresskeyT
-    - AudioPlayPresskeyG
-    - AudioPlayPresskeyH
     - AudioPlayPresskeyT
-    - OSC
-    - OSC_distribution_Yellow
     - ParticleKeypressG
     - ParticleKeypressH
     - ParticleKeypressT
@@ -69,7 +63,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/MushroomYELLOW_scene_spout_v04.unity:
+    Assets/Scenes/Wall_scene_spout_v03.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -90,8 +84,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
-    - Class: 72
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -107,8 +99,6 @@ ScriptsOnlyBuild:
     - Class: 95
       Script: {instanceID: 0}
     - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11184}
@@ -127,8 +117,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11372}
-    - Class: 114
       Script: {instanceID: 11496}
     - Class: 114
       Script: {instanceID: 11522}
@@ -141,15 +129,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11944}
     - Class: 114
-      Script: {instanceID: 12112}
-    - Class: 114
       Script: {instanceID: 12314}
     - Class: 114
       Script: {instanceID: 12398}
     - Class: 114
       Script: {instanceID: 12672}
-    - Class: 114
-      Script: {instanceID: 12710}
     - Class: 114
       Script: {instanceID: 12898}
     - Class: 114
@@ -164,8 +148,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13444}
     - Class: 114
       Script: {instanceID: 13468}
-    - Class: 114
-      Script: {instanceID: 13636}
     - Class: 114
       Script: {instanceID: 13806}
     - Class: 114
@@ -187,8 +169,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14464}
     - Class: 114
-      Script: {instanceID: 14658}
-    - Class: 114
       Script: {instanceID: 14732}
     - Class: 114
       Script: {instanceID: 14768}
@@ -204,8 +184,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15252}
     - Class: 114
       Script: {instanceID: 15254}
-    - Class: 114
-      Script: {instanceID: 15312}
     - Class: 114
       Script: {instanceID: 15314}
     - Class: 114
@@ -237,12 +215,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 73398921
-      Script: {instanceID: 0}
-    - Class: 2058629509
-      Script: {instanceID: 0}
-    - Class: 2083052967
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1351,5 +1323,5 @@ ScriptsOnlyBuild:
     className: VFXUISliderBinder
   platform: 19
   scenePathNames:
-  - Assets/Scenes/MushroomYELLOW_scene_spout_v04.unity
-  playerPath: C:/Users/sienipatarumpu/Documents/GitHub/BUILDS/SIENIPATARUMPU.exe
+  - Assets/Scenes/Wall_scene_spout_v03.unity
+  playerPath: C:/Users/sienipatarumpu/Documents/GitHub/BUILDS/20210316/WALL/SIENIPATARUMPU.exe
