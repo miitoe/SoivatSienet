@@ -1,13 +1,21 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AnimControlPresskeyT
-    - AudioPlayPresskeyT
-    - ParticleKeypressG
-    - ParticleKeypressH
-    - ParticleKeypressT
+    - AnimControlPresskeyI
+    - AnimControlPresskeyO
+    - AnimControlPresskeyP
+    - AudioPlayPresskeyI
+    - AudioPlayPresskeyO
+    - AudioPlayPresskeyP
+    - OSC
+    - OSC_distribution_Blue
+    - ParticleKeypressI
+    - ParticleKeypressO
+    - ParticleKeypressP
+    - Pixelplacement.Spline
     - Pixelplacement.SplineAnchor
     - Pixelplacement.SplineTangent
+    - SplineControlledParticleSystem
     Klak.Spout.dll:
     - Klak.Spout.SpoutSender
     Unity.RenderPipelines.Core.Runtime.dll:
@@ -63,7 +71,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Wall_scene_spout_v03.unity:
+    Assets/Scenes/MushroomBLUE_scene_spout_v04.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -100,6 +108,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11184}
     - Class: 114
@@ -115,83 +125,99 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 11496}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11502}
     - Class: 114
-      Script: {instanceID: 11704}
+      Script: {instanceID: 11528}
     - Class: 114
-      Script: {instanceID: 11750}
+      Script: {instanceID: 11710}
     - Class: 114
-      Script: {instanceID: 11842}
+      Script: {instanceID: 11756}
     - Class: 114
-      Script: {instanceID: 11944}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 12314}
+      Script: {instanceID: 11950}
     - Class: 114
-      Script: {instanceID: 12398}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12320}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 12374}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 13110}
+      Script: {instanceID: 12650}
+    - Class: 114
+      Script: {instanceID: 12678}
+    - Class: 114
+      Script: {instanceID: 12904}
+    - Class: 114
+      Script: {instanceID: 12954}
+    - Class: 114
+      Script: {instanceID: 13010}
+    - Class: 114
+      Script: {instanceID: 13086}
+    - Class: 114
+      Script: {instanceID: 13116}
     - Class: 114
       Script: {instanceID: 13202}
     - Class: 114
-      Script: {instanceID: 13444}
+      Script: {instanceID: 13240}
     - Class: 114
-      Script: {instanceID: 13468}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 13806}
+      Script: {instanceID: 13450}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13474}
     - Class: 114
-      Script: {instanceID: 13898}
+      Script: {instanceID: 13812}
     - Class: 114
-      Script: {instanceID: 14028}
+      Script: {instanceID: 13814}
     - Class: 114
-      Script: {instanceID: 14058}
+      Script: {instanceID: 13886}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 13906}
     - Class: 114
-      Script: {instanceID: 14218}
+      Script: {instanceID: 14036}
     - Class: 114
-      Script: {instanceID: 14286}
+      Script: {instanceID: 14066}
     - Class: 114
-      Script: {instanceID: 14402}
+      Script: {instanceID: 14072}
     - Class: 114
-      Script: {instanceID: 14464}
+      Script: {instanceID: 14324}
     - Class: 114
-      Script: {instanceID: 14732}
+      Script: {instanceID: 14410}
     - Class: 114
-      Script: {instanceID: 14768}
+      Script: {instanceID: 14472}
     - Class: 114
-      Script: {instanceID: 14950}
+      Script: {instanceID: 14776}
     - Class: 114
-      Script: {instanceID: 15012}
+      Script: {instanceID: 14880}
     - Class: 114
-      Script: {instanceID: 15014}
+      Script: {instanceID: 14960}
     - Class: 114
-      Script: {instanceID: 15046}
+      Script: {instanceID: 15022}
     - Class: 114
-      Script: {instanceID: 15252}
+      Script: {instanceID: 15024}
     - Class: 114
-      Script: {instanceID: 15254}
+      Script: {instanceID: 15262}
     - Class: 114
-      Script: {instanceID: 15314}
+      Script: {instanceID: 15264}
     - Class: 114
-      Script: {instanceID: 15342}
+      Script: {instanceID: 15324}
     - Class: 114
-      Script: {instanceID: 15456}
+      Script: {instanceID: 15352}
     - Class: 114
-      Script: {instanceID: 15462}
+      Script: {instanceID: 15410}
+    - Class: 114
+      Script: {instanceID: 15466}
+    - Class: 114
+      Script: {instanceID: 15472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -261,6 +287,12 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
+      Hash: aca25096683758f6f003d32472a9876b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OSC_distribution_Wall_Red
+  - hash:
+      serializedVersion: 2
       Hash: c42672c997f8be6b1aa86a927ebea785
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -277,6 +309,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioPlayPresskeyI
+  - hash:
+      serializedVersion: 2
+      Hash: aca25096683758f6f003d32472a9876b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OSC_distribution_Wall_Blue
   - hash:
       serializedVersion: 2
       Hash: 8c328a0ffa03c1bcb9332bb39f4f8453
@@ -309,7 +347,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerBitField
   - hash:
       serializedVersion: 2
-      Hash: 4fcce362de04d9e84a978b3d0b94cd8f
+      Hash: c63ab478e19820a7e501eae920efb719
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OSC_distribution_Yellow
@@ -729,7 +767,7 @@ ScriptsOnlyBuild:
     className: ParticleKeypressG
   - hash:
       serializedVersion: 2
-      Hash: 4fcce362de04d9e84a978b3d0b94cd8f
+      Hash: c63ab478e19820a7e501eae920efb719
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OSC_distribution_Red
@@ -823,6 +861,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnimControlPresskeyB
+  - hash:
+      serializedVersion: 2
+      Hash: aca25096683758f6f003d32472a9876b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OSC_distribution_Wall_Yellow
   - hash:
       serializedVersion: 2
       Hash: 17bec6a04fdc57dd343c6607198eda8d
@@ -963,7 +1007,7 @@ ScriptsOnlyBuild:
     className: AudioPlayPresskeyT
   - hash:
       serializedVersion: 2
-      Hash: e40b6f5ca6408ecc8416ed56069cfb2b
+      Hash: f5a60cce92a46d14dd79a15776e71853
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OSC_distribution_Blue
@@ -1075,6 +1119,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Pixelplacement
     className: Chooser
+  - hash:
+      serializedVersion: 2
+      Hash: 47f3a443a5da5be3318af6c736a01617
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OSC_distribution_Wall
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -1323,5 +1373,5 @@ ScriptsOnlyBuild:
     className: VFXUISliderBinder
   platform: 19
   scenePathNames:
-  - Assets/Scenes/Wall_scene_spout_v03.unity
-  playerPath: C:/Users/sienipatarumpu/Documents/GitHub/BUILDS/20210316/WALL/SIENIPATARUMPU.exe
+  - Assets/Scenes/MushroomBLUE_scene_spout_v04.unity
+  playerPath: C:/Users/sienipatarumpu/Documents/GitHub/BUILDS/20210325/BLUE_3/SIENIPATARUMPU.exe

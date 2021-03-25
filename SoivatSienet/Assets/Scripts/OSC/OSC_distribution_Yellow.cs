@@ -24,7 +24,7 @@ public class OSC_distribution_Yellow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-       osc.SetAddressHandler("/yellow1" , yellow1);
+       osc.SetAddressHandler("/yellow1", yellow1);
        osc.SetAddressHandler("/yellow2", yellow2);
        osc.SetAddressHandler("/yellow3", yellow3);
     }
