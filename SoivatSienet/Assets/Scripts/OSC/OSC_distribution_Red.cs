@@ -16,6 +16,8 @@ public class OSC_distribution_Red : MonoBehaviour {
     public GameObject DOT_animation2;
     public GameObject DOT_animation3;
 
+    public OscMessage message = new OscMessage();
+
     private float red1Int;
     private float red2Int;
     private float red3Int;
@@ -31,6 +33,7 @@ public class OSC_distribution_Red : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
 	}
 
     void red1(OscMessage message){
@@ -38,8 +41,10 @@ public class OSC_distribution_Red : MonoBehaviour {
         DOT_particle1.Play();
         DOT_particle1_2.Play();
         DOT_animation1.GetComponent<Animator>().Play("YDOT01_press");
-        
-        Debug.Log("RED 1:" + red1Int);
+
+        message.address = "/playRed";
+        message.values.Add( 100 );
+        osc.Send(message);
 	}
 
     void red2(OscMessage message){
@@ -47,11 +52,19 @@ public class OSC_distribution_Red : MonoBehaviour {
         DOT_particle2_2.Play();
         DOT_animation2.GetComponent<Animator>().Play("YDOT02_press");
 
+        message.address = "/playRed";
+        message.values.Add( 100 );
+        osc.Send(message);
+
 	}
 
     void red3(OscMessage message){
         DOT_particle3.Play();
         DOT_particle3_2.Play();
         DOT_animation3.GetComponent<Animator>().Play("YDOT03_press");
+
+        message.address = "/playRed";
+        message.values.Add( 100 );
+        osc.Send(message);
 	}
 }

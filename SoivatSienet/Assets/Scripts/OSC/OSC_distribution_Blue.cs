@@ -13,6 +13,9 @@ public class OSC_distribution_Blue : MonoBehaviour {
     public ParticleSystem DOT_smallParticle2;
     public ParticleSystem DOT_smallParticle3;
     public float sensitivity = 1;
+
+    public OscMessage message = new OscMessage();
+
     private float blue1Int;
     private float blue2Int;
     private float blue3Int;
@@ -65,6 +68,10 @@ public class OSC_distribution_Blue : MonoBehaviour {
             DOT_animation1.GetComponent<Animator>().Play("BDOT04_press");
             DOT_particle1.Play();
             DOT_smallParticle1.Play();
+
+            message.address = "/playBlue";
+            message.values.Add( 100 );
+            osc.Send(message);
         }
 	}
 
@@ -75,6 +82,10 @@ public class OSC_distribution_Blue : MonoBehaviour {
             DOT_animation2.GetComponent<Animator>().Play("BDOT05_press");
             DOT_particle2.Play();
             DOT_smallParticle2.Play();
+
+            message.address = "/playBlue";
+            message.values.Add( 100 );
+            osc.Send(message);
         }
 	}
 
@@ -85,6 +96,10 @@ public class OSC_distribution_Blue : MonoBehaviour {
             DOT_animation3.GetComponent<Animator>().Play("BDOT06_press");
             DOT_particle3.Play();
             DOT_smallParticle3.Play();
+
+            message.address = "/playBlue";
+            message.values.Add( 100 );
+            osc.Send(message);
         }
 	}
 }

@@ -15,14 +15,14 @@ public class OSC_distribution_Wall_Blue : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-       osc.SetAddressHandler("/blue1", blueSensorData);
+       /*osc.SetAddressHandler("/blue1", blueSensorData);
        osc.SetAddressHandler("/blue2", blueSensorData);
-       osc.SetAddressHandler("/blue3", blueSensorData);
+       osc.SetAddressHandler("/blue3", blueSensorData);*/
     }
 	
 	// Update is called once per frame
 	void Update () {
-
+        osc.SetAddressHandler("/playRed", blueSensorData);
 	}
 
     void blueSensorData(OscMessage message){
@@ -41,7 +41,6 @@ public class OSC_distribution_Wall_Blue : MonoBehaviour {
     IEnumerator makeParticlesInactive() {
         yield return new WaitForSeconds(waitTime);// Wait a bit
         active = false;
-        Debug.Log("AVAILABLE AGAIN");
     }
 
 }

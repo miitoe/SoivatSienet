@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MushroomRED_scene_spout_v04.unity
     guid: 9268b14363c67e44cbbad6fc8a75fccb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MushroomBLUE_scene_spout_v04.unity
     guid: 9a546856bb4961540ad306b8e9da7e35
   - enabled: 0

@@ -16,6 +16,8 @@ public class OSC_distribution_Yellow : MonoBehaviour {
     public GameObject DOT_animation2;
     public GameObject DOT_animation3;
 
+    public OscMessage message = new OscMessage();
+
     private float yellow1Int;
     private float yellow2Int;
     private float yellow3Int;
@@ -38,6 +40,10 @@ public class OSC_distribution_Yellow : MonoBehaviour {
         DOT_particle1.Play();
         DOT_particle1_2.Play();
         DOT_animation1.GetComponent<Animator>().Play("YDOT01_press");
+
+        message.address = "/playYellow";
+        message.values.Add( 100 );
+        osc.Send(message);
 	}
 
     void yellow2(OscMessage message){
@@ -45,12 +51,20 @@ public class OSC_distribution_Yellow : MonoBehaviour {
         DOT_particle2_2.Play();
         DOT_animation2.GetComponent<Animator>().Play("YDOT02_press");
 
+        message.address = "/playYellow";
+        message.values.Add( 100 );
+        osc.Send(message);
+
 	}
 
     void yellow3(OscMessage message){
         DOT_particle3.Play();
         DOT_particle3_2.Play();
         DOT_animation3.GetComponent<Animator>().Play("YDOT03_press");
+
+        message.address = "/playYellow";
+        message.values.Add( 100 );
+        osc.Send(message);
 	}
 
 }
